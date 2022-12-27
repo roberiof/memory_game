@@ -1,0 +1,162 @@
+.start_game_div{
+  aspect-ratio: 1/1;
+  min-width: 150px;
+  border-radius: 5px;
+  opacity: .9;
+  background-color: lightgreen;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate( -50% , -50%);
+}
+
+.start_game_btn{
+  user-select: none;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 50px solid white;
+  opacity: .9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate( -50% , -50%);
+}
+
+.black_background{
+  background-color: rgba(0, 0, 0, 0.389);
+  width: 100vw;
+  height: 100vh;
+}
+
+.arrows{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100px;
+  margin: 10px;
+  z-index: -1;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.arrows i{
+  cursor: pointer;
+  opacity: .8;
+  background-color: lightgreen;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px ;
+}
+
+.won_div{
+  width: 90%;
+  max-width: 600px;
+  font-size: 14px;
+  display: none;
+  border-radius: 5px;
+  line-height: 2rem;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgreen;
+  padding: 40px 20px;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate( -50% , -50%);
+}
+
+.won_div h1{
+  font-size: 18px
+}
+.won_div p {
+  width: 80%;
+}
+
+.won_div button{
+  cursor: pointer;
+  border-radius: 5px ;
+  background-color: blueviolet;
+  padding: 10px 20px;
+  transition: all .5s;
+}
+
+.won_div button:hover{
+  background-color: orangered;
+}
+
+body{
+  background-image: url(/images/bg.jpg) ;   
+}
+
+.wrapper{
+  z-index: -1;
+  width: 95%;
+  max-width: 500px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate( -50% , -50%);
+}
+
+header{
+  display: flex;
+  background-color: lightgreen;
+  opacity: .8;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: clamp(15px, 15px , 20px);
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns:  repeat( 5 , 1fr);
+  gap: 10px;
+}
+
+.card{
+  aspect-ratio: 3/4;
+  /* this propriety is used to set a width-height proportion */
+  width: 100%;
+  /* this width means that the card will occupy all its fraction of the grid */
+  position: relative;
+  transition: all .5s ease;
+  transform-style: preserve-3d ;
+  background-color: #ccc;
+}
+
+.face{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center ;
+  border: 2px solid green;
+  transition: all 0.5s ease;
+}
+
+.front{
+  transform:  rotateY(180deg);
+  /* this transform has the function of  'unmirror' the content*/
+}
+
+.back{
+  background-image: url(/images/back.png);
+  backface-visibility: hidden;
+  /* the guy above just works with the transfom-style propriety in the card */
+}
+
+.reveal_card{
+  transform: rotateY(180deg);
+}
+
+.disabled_card{
+  filter: saturate(0);
+  opacity: .8;
+}
