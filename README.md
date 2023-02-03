@@ -1,6 +1,6 @@
 # memory_game
 
-### https://roberiof.github.io/memory_game/
+https://roberiof.github.io/memory_game/
 
 Rick And Morty Memory Game with HTML5, CSS3 and Vanilla JS
 New Learnings: 
