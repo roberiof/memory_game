@@ -16,7 +16,7 @@ const handleForm = (e) =>{
     const names = JSON.parse(localStorage.getItem('names')) ?? []
     names.push(input.value)
     localStorage.setItem('names' , JSON.stringify(names))
-    window.location = '/pages/game.html'
+    window.location = '../pages/game.html'
 }
 
 input.addEventListener('input' , handleBtn)
