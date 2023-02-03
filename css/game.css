@@ -88,7 +88,7 @@
 }
 
 body{
-  background-image: url(/images/bg.jpg) ;   
+  background-image: url(../images/bg.jpg) ;   
 }
 
 .wrapper{
@@ -147,7 +147,7 @@ header{
 }
 
 .back{
-  background-image: url(/images/back.png);
+  background-image: url(../images/back.png);
   backface-visibility: hidden;
   /* the guy above just works with the transfom-style propriety in the card */
 }
