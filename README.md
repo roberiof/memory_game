@@ -1,6 +1,13 @@
-# memory_game
+<h1 align=center> MEMORY GAME  </h1>
+<br>
 
-https://roberiof.github.io/memory_game/pages/index.html
+![roberiof github io_memory_game_pages_game html](https://github.com/roberiof/memory_game/assets/107323497/a8397cb5-b6e9-444f-a20a-fa689c16298e)
+
+<br>
+
+> Use the project yourself: https://roberiof.github.io/memory_game/pages/index.html
+
+<br>
 
 Rick And Morty Memory Game with HTML5, CSS3 and Vanilla JS
 New Learnings: 
